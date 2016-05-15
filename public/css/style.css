@@ -1,0 +1,174 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+#main-container {
+    margin-top: 80px;
+}
+.menu {
+    background-color: rgb(243, 243, 243);
+    padding: 20px 10px;
+    font-size: 18px;
+    border-bottom: 1px solid #E6E6E6;
+    width: 100%;
+    box-shadow: 0px 1px 19px #000000;
+    display: -webkit-inline-box;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+.menu .title {
+    color: #313131;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgba(204, 200, 200, 0.78);
+    margin-right: 20px;
+}
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 5px;
+    margin-right: 10px;
+}
+.menu .logout {
+    margin-right: 15px;
+    position: fixed;
+    right: 0px;
+    top: 16px;
+}
+#google-map a {
+    position: absolute;
+    top: -10px;
+}
+.menssage {
+    width: 350px;
+    position: fixed;
+    z-index: 9999;
+    background: rgba(92, 184, 92, 0.9);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 6px #868484;
+    right: 0;
+    color: #FFFFFF;
+    border: 1px solid #5cb85c;
+    text-align: justify;
+    font-family: sans-serif;
+}
+.menssage a {
+    position: absolute;
+    right: 0px;
+    top: -2px;
+    margin-right: 10px;
+    color: #467346;
+    text-decoration: none;
+    font-family: fantasy;
+    font-size: 22px;
+}
+.content-login {
+    width: 100%;
+    text-align: center;
+}
+.login-box {
+    display: inline-table;
+    border: 1px solid #BDBDBD;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 1px 4px 6px #D2D2D2;
+    width: 200px;
+}
+.login-box input {
+    padding: 5px;
+    margin-bottom: 6px;
+    width: 80%;
+}
+.login-box .submit {
+    padding: 5px;
+    font-size: 18px;
+    width: 88%;
+    border: 1px solid #CCCCCC;
+    background: #6CBF6C;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.content-users nav {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
+    text-decoration: none;
+}
+.content-users a {
+    text-decoration: none;
+}
+.create-users {
+    text-align: center;
+    border: 1px solid #ABABAB;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px #A2A2A2;
+    display: inline-table;
+    ;
+}
+.content-users {
+    width: 100%;
+    text-align: center;
+}
+.content-users form div label, .content-users form div input {
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 200px;
+}
+.content-users input[type=submit] {
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 18px;
+    width: 88%;
+    border: 1px solid #CCCCCC;
+    background: #6CBF6C;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.content-users a {
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 18px;
+    width: 100%;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.content-users nav a {
+    text-decoration: underline;
+    cursor: pointer;
+}
+table {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #B7B7B7;
+    border-spacing: 0px;
+}
+table td, table th {
+    border: 1px solid #757575;
+    padding: 5px;
+}
+.list-users {
+    width: initial;
+    padding: 14px
+}
+table td a {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.chart{
+    height: 100px;
+    width: 600px;
+    text-align: center;
+}
