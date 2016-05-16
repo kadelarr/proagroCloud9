@@ -7,7 +7,7 @@
 class DataBase
 {
     private $host = "localhost";
-    private $username = "root";
+    private $username = "kadelarr7";
     private $password = "";
     private $dataBase = "proagro";
     public $db;

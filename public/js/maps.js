@@ -33,7 +33,7 @@
      */
     Map.getDataAjax = function() {
         $.ajax({
-            url:"http://proagro.dev?get=areas",
+            url:"https://proagro-kadelarr7.c9users.io?get=areas",
             dataType:"jsonp", 
             jsonpCallback: "callback",
             success: function(data){

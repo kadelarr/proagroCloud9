@@ -33,7 +33,7 @@ function promedio(){
                 new Chartist.Bar('.ct-chart', dataLocations);
             }
         };
-        xhttp.open("GET", "http://proagro.dev?get=promedio", true);
+        xhttp.open("GET", "https://proagro-kadelarr7.c9users.io?get=promedio", true);
         xhttp.send();
 }
 
