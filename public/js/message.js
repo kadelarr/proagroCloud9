@@ -10,8 +10,13 @@ function calcularPanela(){
     var operacionPanela=panela*24;
     var operacionCana=(1000*cana);
 	var result = (1000*operacionPanela)/operacionCana;
-	viewRestult.value = result;
- 
+	viewRestult.value = Math.round(result);
+    if (result<110) {
+     var div=document.getElementById('alert');
+     var h1=document.createElement("h1");
+     h1.innerHTML="jdhs";
+     div.appendChild(h1);
+    }else
 	console.info(result);
 }
 
@@ -33,7 +38,7 @@ function promedio(){
                 new Chartist.Bar('.ct-chart', dataLocations);
             }
         };
-        xhttp.open("GET", "https://proagro-kadelarr7.c9users.io?get=promedio", true);
+        xhttp.open("GET", "http://proagro.dev?get=promedio", true);
         xhttp.send();
 }
 
