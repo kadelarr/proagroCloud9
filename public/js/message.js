@@ -12,11 +12,18 @@ function calcularPanela(){
 	var result = (1000*operacionPanela)/operacionCana;
 	viewRestult.value = Math.round(result);
     if (result<110) {
-     var div=document.getElementById('alert');
+     var div=document.getElementById('error');
      var h1=document.createElement("h1");
-     h1.innerHTML="jdhs";
+     
+    h1.innerHTML="El Rendimiento de la Producción es Bajo";
      div.appendChild(h1);
-    }else
+    }else{
+         var div=document.getElementById('correcto');
+         var h2=document.createElement("h2");
+     
+    h2.innerHTML="El Rendimiento de la Producción es Óptimo";
+     div.appendChild(h2);
+    }
 	console.info(result);
 }
 
@@ -40,6 +47,7 @@ function promedio(){
         };
         xhttp.open("GET", "http://proagro.dev?get=promedio", true);
         xhttp.send();
+        
 }
 
 promedio();

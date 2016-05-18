@@ -48,18 +48,18 @@
       $data = str_replace("\\", "", json_encode($data, JSON_NUMERIC_CHECK));
       $data = str_replace("\"[", "[", $data);
       $data = str_replace("]\"", "]", $data);
-      //Se imprime la respuesta para el consumo del WebServices
+      /*Se imprime la respuesta para el consumo del WebServices*/
       return $data;
   }
 }
 
-  //Se instancia la clase para ser ejecutada
+  /*Se instancia la clase para ser ejecutada*/
   $promedio = new PromedioService();
 
-  //Se realiza una validación del servicio que se trata de obtener
+  /*Se realiza una validación del servicio que se trata de obtener*/
   if(isset($_GET['get'])) {
      if($_GET['get'] == 'promedio') {
-      echo "callback(".$promedio->getAreas().")";
+      echo $promedio->getAreas();
       
     }
   }

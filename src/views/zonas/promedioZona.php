@@ -1,9 +1,10 @@
-<div class="content-users">
+<div class="p">
+<div class="content-promedio">
   <nav>
     <a href="<?php echo $routeServer . $urls['routing'] . "?url=zona"; ?>">Volver Zona</a>
   </nav>
-  <div class="list-users">
-    <table>
+  <div class="list-promedio">
+    <table class="tb_promedio">
       <thead>
         <tr>
           <th>Lote</th>
@@ -24,3 +25,4 @@
 </div>
 
 <div class="chart"> <div class="ct-chart ct-perfect-fourth"></div></div>
+</div>

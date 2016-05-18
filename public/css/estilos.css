@@ -352,17 +352,64 @@ label{
 #alert{
 	display: -webkit-inline-box;
 	width: 100%;
-}
+}*/
 #alert input{
 width: 100%;
 }
 #alert h1{
-	background: #ff6666;
-	color: gray;
+	
+	color: #ff6666;
 	margin-left: 5%;
-    width: 45%;
+    
 	height: 20px;
 	padding: 10px;
-	font-style: italic;
+	font-size: 100%;
+    text-align: center;
+}
+
+#alert h2{
+	
+	color: #00FF00;
+	margin-left: 5%;
+    
+	height: 20px;
+	padding: 10px;
+	font-size: 100%;
+    text-align: center;
+}
+
+#correcto,#error, {
+    border: 1px solid;
+    margin: 10px 0px;
+    padding:15px 10px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:13px;
+    text-align:left;
+    width:auto;
+}
+#correcto {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    height: 63px;
+    margin: 20px;
+    background-image:url('../img/correcto.JPG');
+    background-repeat: no-repeat;
+        background-position-x: 4px;
+        background-position-y: 10px;
+}
+
+#error {
+    color: #D8000C;
+    background-color: #FFBABA;
+    height: 63px;
+    margin: 20px;
+    background-image: url('../img/error.jpg');
+    background-repeat: no-repeat;
+        background-position-x: 4px;
+        background-position-y: 10px;
+        
+
 }
 
