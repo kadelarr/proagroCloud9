@@ -24,5 +24,5 @@
 
 </div>
 
-<div class="chart"> <div class="ct-chart ct-perfect-fourth"></div></div>
+<div class="chart"> <div class=" grafico1 ct-chart ct-perfect-fourth"></div></div>
 </div>

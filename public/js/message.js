@@ -3,6 +3,12 @@ function closeMessage(event){
   container.removeChild(event);
 }
 
+
+
+/**
+* Funcion que realiza el calculo de rendimiento de produccion de panela
+* semanal 
+*/
 function calcularPanela(){
 	var viewRestult = document.getElementById("result");
 	var cana = document.getElementById("cana").value;
@@ -27,18 +33,12 @@ function calcularPanela(){
 	console.info(result);
 }
 
+/**
+* Funcion que muestra el promedio por medio de estadisticas
+*/
 function promedio(){
 
-   /* $.ajax({
-            url:"http://proagro.dev?get=promedio",
-            dataType:"jsonp", 
-            jsonpCallback: "callback",
-            success: function(data){
-                console.log(data);
-
-                dataLocations = data;
-                new Chartist.Bar('.ct-chart', dataLocations);*/
-	 var xhttp = new XMLHttpRequest();
+	/* var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
             if (xhttp.readyState == 4 && xhttp.status == 200) {
                 dataLocations = JSON.parse(xhttp.responseText);
@@ -46,8 +46,10 @@ function promedio(){
             }
         };
         xhttp.open("GET", "http://proagro.dev?get=promedio", true);
-        xhttp.send();
-        
+        xhttp.send();*/
+        var grafico={"labels":["Zona 1","Zona 2","Zona 3","Zona 4","Zona 5","Zona 6","Zona 7","Zona 8","Zona 9"],"series":[[280,287.5,275,293.33333333333,283,293,301.5,282.5,295]]}
+        new Chartist.Bar('.grafico1', grafico);
+
 }
 
 promedio();

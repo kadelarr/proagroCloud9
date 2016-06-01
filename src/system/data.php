@@ -12,6 +12,10 @@ $urls = array(
     'editarZona' => 'src/views/zonas/editarZona.php',
     'about' => 'src/views/web/about.php',
     'contacto' => 'src/views/web/contacto.php',
+    'siembra' => 'src/views/zonas/siembra.php',
+    'corte' => 'src/views/zonas/corte.php',
+    'corteFinal' => 'src/views/zonas/corteFinal.php',
+    'eliminarUser' => 'src/views/user/eliminarUser.php',
 
 
     //sistema

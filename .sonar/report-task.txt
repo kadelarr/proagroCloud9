@@ -1,5 +1,5 @@
 projectKey=proagro
 serverUrl=http://localhost:9000
 dashboardUrl=http://localhost:9000/dashboard/index/proagro
-ceTaskId=AVScwgQMyI7pomgnzxNi
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AVScwgQMyI7pomgnzxNi
+ceTaskId=AVTjNVcy-C1CKuif82bt
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AVTjNVcy-C1CKuif82bt

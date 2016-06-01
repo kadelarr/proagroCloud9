@@ -1,4 +1,5 @@
  <div class="rendi"> 
+      <label class="titulo">Calculo de Rendimiento Semanal</label><br></br>
       <label>Cantidad de Toneladas de Caña</label>
       <input type="number" id="cana"> </input>
       <label>Cantidad de Bolsas de Panela</label>
@@ -15,10 +16,14 @@
   
 <div class="content-users">
   <nav>
-    <a href="<?php echo $routeServer . $urls['routing'] . "?url=createZona"; ?>">Crear Zona</a>
+    <a href="<?php echo $routeServer . $urls['routing'] . "?url=createZona"; ?>">Crear Siembra</a>
     <a href="<?php echo $routeServer . $urls['routing'] . "?url=promedioZona"; ?>">Promedio Zona</a>
+    <a href="<?php echo $routeServer . $urls['routing']. "?url=siembra";?>">Zonas con Siembra</a>
+    <a href="<?php echo $routeServer . $urls['routing']. "?url=corte";?>">Zonas para corte</a>
+    <a href="<?php echo $routeServer . $urls['routing']. "?url=corteFinal";?>">Zonas con Corte Final</a>
+    
   </nav>
-
+  
   <div class="list-users">
     <table>
       <thead>

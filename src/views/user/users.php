@@ -10,6 +10,7 @@
           <th>Nombre</th>
           <th>Tipo</th>
           <th>Acción</th>
+          <th>Acción</th>
         </tr>
       </thead>
       <tbody>

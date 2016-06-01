@@ -409,7 +409,11 @@ width: 100%;
     background-repeat: no-repeat;
         background-position-x: 4px;
         background-position-y: 10px;
-        
+}
 
+.titulo	{
+	margin-left: 20%;
+	font-weight: bold;
+	font-size: 120%;   
 }
 

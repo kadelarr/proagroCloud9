@@ -25,6 +25,8 @@ class UserController{
           ."</td>"
           ."<td><a href='" . $editar .  "?id=" . $row['id'] . "&url=editarUser'>Editar</a>"
           ."</td>"
+          ."<td><a href='" . $editar .  "?id=" . $row['id'] . "&url=eliminarUser'>Eliminar</a>"
+          ."</td>"
           ."</tr>";
       }
       return $table;
@@ -95,6 +97,14 @@ class UserController{
     }
     return $this->db->updateData("users", $dataInsert, "id = " . $dataUser['id']);
   }
+
+  
+
+  public function eliminarUser($id){
+     
+       $this->db->removeData("users","id = " . $id);
+  }
+  
 
 }
 ?>

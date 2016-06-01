@@ -3,7 +3,9 @@ include_once   $urls['userController'];
     $users = new UserController();
     $column = $users->buscarUser($_SESSION['id']);
 if(isset($_POST['user'])) {
-  //Se valida que los campos no esten vacios
+  /**
+  * Se valida que los campos no esten vacios
+  */
   if($_POST['user'] != '' && $_POST['password'] != '' && $_POST['name'] != '') {
     
     if($users->editarUser($_POST)) {
@@ -23,7 +25,9 @@ if(isset($_POST['user'])) {
         </div>
         <div>
           <label>Nombre: </label>
-          <input type="text" name="name" value="<?php echo $column['name'];?>" required>
+          <input title="!!SOLO SE PERMITEN LETRAS" type="text" name="name" value="<?php echo $column['name'];?>" requiredpattern="([a-z A-Z ]{4, 20})" maxlength="20">
+          
+           
         </div>
         <div>
           <label>Password: </label>
@@ -32,13 +36,13 @@ if(isset($_POST['user'])) {
         <div>
           <label>Rol: </label>
           <select class="" name="rol">
-            <option value="1" <?php echo $column['rol'] == 1 ? 'selected' : ''; ?>>Admin</option>
-            <option value="2" <?php echo $column['rol'] == 2 ? 'selected' : ''; ?>>User</option>
+            <option value="1" <?php echo $column['rol'] == 1 ? 'selected' : ''; ?>>Administrador</option>
+            <option value="2" <?php echo $column['rol'] == 2 ? 'selected' : ''; ?>>Usuario</option>
           </select>
         </div>
         <div>
-          <input type="submit" name="submit" value="Update">
-          <a href="<?php echo $routeServer . $urls['routing'] . "?url=users"; ?>">Cancel</a>
+          <input type="submit" name="submit" value="Actualizar">
+          <a href="<?php echo $routeServer . $urls['routing'] . "?url=users"; ?>">Cancelar</a>
         </div>
       </form>
     </div>

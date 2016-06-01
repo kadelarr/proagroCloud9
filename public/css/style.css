@@ -169,6 +169,7 @@ table td a {
 
 .chart{
     display: inline-table;
+    margin-left: 30%;
     height: 100px;
     width: 600px;
     
